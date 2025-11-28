@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset=" utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Репетитор английского — Яркие Уроки</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg1: #ffecd2; --bg2: #fcb69f; --accent1: #7afcff; --accent2: #6b5cff; --card: #ffffff; --muted: #555; --glass: rgba(255,255,255,0.6); --radius: 18px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Arial,"Baloo 2";background:linear-gradient(135deg,var(--bg1),var(--bg2));color:#111}
+.wrap{max-width:1100px;margin:40px auto;padding:28px}
+header{display:flex;gap:20px;align-items:center}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .mark{width:72px;height:72px;border-radius:16px;background:linear-gradient(135deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(107,92,255,0.18);}
+.logo .mark svg{width:44px;height:44px;transform:rotate(-10deg)}
+.brand{line-height:1}
+.brand h1{margin:0;font-family:'Baloo 2',cursive;font-size:22px}
+.brand p{margin:0;color:var(--muted)}
+nav{margin-left:auto}
+nav a{margin-left:12px;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;color:#fff;background:linear-gradient(90deg,var(--accent2),#8df2ff);box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+.hero{margin-top:26px;background:var(--card);border-radius:20px;padding:26px;display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.hero-left h2{font-size:28px;margin:0 0 10px}
+.pill{display:inline-block;padding:6px 12px;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:#052; font-weight:700;margin-bottom:12px}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.tag{background:var(--glass);padding:8px 10px;border-radius:12px;font-weight:600}
+.cta-row{display:flex;gap:12px;margin-top:18px}
+.btn{padding:12px 18px;border-radius:14px;border:0;font-weight:700;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,#6b5cff,#8df2ff);color:#fff}
+.btn-ghost{background:transparent;border:2px solid #eee}
+.hero-right{display:flex;flex-direction:column;gap:12px}
+.card-small{background:linear-gradient(180deg,rgba(250,250,255,0.9),rgba(255,255,255,0.95));padding:14px;border-radius:14px;display:flex;align-items:center;gap:12px}
+.photo{width:72px;height:72px;border-radius:12px;background:linear-gradient(90deg,#ffe0f0,#dfeaff);display:flex;align-items:center;justify-content:center;font-weight:700}
+section{margin-top:26px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:var(--card);padding:18px;border-radius:14px;box-shadow:0 8px 22px rgba(0,0,0,0.06)}
+.service h3{margin:0 0 8px}
+.service p{margin:0;color:var(--muted)}
+.testimonials{display:flex;flex-direction:column;gap:12px}
+.testimonial{background:linear-gradient(180deg,#fff,#fbfbff);padding:14px;border-radius:12px}
+.contact{display:grid;grid-template-columns:1fr 340px;gap:18px}
+form{background:var(--card);padding:18px;border-radius:12px;display:flex;flex-direction:column;gap:10px}
+input,textarea{padding:12px;border-radius:10px;border:1px solid #eee;font-size:15px}
+footer{text-align:center;margin-top:22px;color:var(--muted);font-size:14px}
+@media(max-width:880px){
+  .hero{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:repeat(1,1fr)}
+  .contact{grid-template-columns:1fr}
+  nav{display:none}
+}
+.mark .float{animation:float 4s ease-in-out infinite}
+@keyframes float{
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">
+    <div class="mark" aria-hidden>
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" class="float">
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="32" cy="32" r="30" fill="white" opacity="0.12"/>
+          <path d="M20 40c4-6 20-6 24 0" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 22c6 0 6-8 18-8" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+    </div>
+    <div class="brand">
+      <h1>Яркие Уроки — English</h1>
+      <p>Репетитор для детей и подростков • 20 лет опыта</p>
+    </div>
+  </div>
+  <nav>
+    <a href="#services">Услуги</a>
+    <a href="#about">О себе</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero" role="region" aria-label="Главный блок">
+  <div class="hero-left">
+    <span class="pill">Весело • Эффективно • По-английски</span>
+    <h2>Игровые уроки английского для детей 6–14 лет</h2>
+    <p style="color:var(--muted);margin-top:8px">Я использую игры, песни и короткие проекты, чтобы дети говорили уверенно. Программа индивидуальна: разговорная практика, помощь с домашними заданиями, развитие навыков общения.</p>
+    
+    <div class="tags" aria-hidden>
+      <div class="tag">Онлайн: Zoom</div>
+      <div class="tag">Группы и индивидуально</div>
+      <div class="tag">Материалы включены</div>
+    </div>
+
+    <div class="cta-row">
+      <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Записаться на пробный</button>
+      <a class="btn btn-ghost" href="https://t.me/+79996771039" target="_blank">Написать мне</a>
+    </div>
+  </div>
+
+  <aside class="hero-right" aria-hidden>
+    <div class="card-small">
+      <div class="photo">А</div>
+      <div>
+        <div style="font-weight:700">Анастасия — ваш репетитор</div>
+        <div style="color:var(--muted);font-size:14px">20 лет опыта • Для детей</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<section id="services">
+  <h2 style="font-size:24px;margin-bottom:16px">Что я предлагаю</h2>
+  <div class="grid-3">
+    <div class="service">
+      <h3>Индивидуальные уроки</h3>
+      <p>45–60 минут, 1–3 раза в неделю. Учёт темперамента и интересов ребёнка.</p>
+    </div>
+    <div class="service">
+      <h3>Мини-группы (2–4 ученика)</h3>
+      <p>Идеально для практики диалогов и развития уверенности в речи.</p>
+    </div>
+    <div class="service">
+      <h3>Разговорная практика</h3>
+      <p>Развиваем живую речь через игры, истории и ролевые ситуации.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 style="font-size:24px;margin-bottom:16px">Обо мне</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>Я — Анастасия, сертифицированный преподаватель английского с дипломом Смоленского государственного университета. За 20 лет работы я помогла сотням детей не просто выучить язык, а полюбить его. Мои ученики свободно общаются на английском и не боятся ошибаться.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div>
+    <h2 style="font-size:24px;margin-bottom:16px">Связаться со мной</h2>
+    <form>
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон (для связи в Telegram)" required />
+      <textarea rows="3" placeholder="Возраст ребёнка, цели, удобное время"></textarea>
+      <button type="submit" class="btn btn-primary">Отправить заявку</button>
+    </form>
+  </div>
+  <div>
+    <div class="card-small">
+      <div class="photo">📱</div>
+      <div>+7 (999) 677-10-39</div>
+    </div>
+    <div class="card-small">
+      <div class="photo">💬</div>
+      <div><a href="https://t.me/+79996771039" target="_blank" style="color:inherit;text-decoration:underline">Написать в Telegram</a></div>
+    </div>
+    <div class="card-small">
+      <div class="photo">📍</div>
+      <div>Онлайн по всей России и миру</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Яркие Уроки — English. Все права защищены.
+</footer>
+
+</div>
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Спасибо за заявку! Я свяжусь с вами в ближайшее время.');
+    this.reset();
+  });
+</script>
+</body>
+</html>
